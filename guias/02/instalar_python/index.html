@@ -1,0 +1,1050 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.3.9">
+    
+    
+      
+        <title>Instalación de Python - Python UNLP</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.1d29e8d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#instalacion-de-python" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Python UNLP" class="md-header__button md-logo" aria-label="Python UNLP" data-md-component="logo">
+      
+  <img src="../../../images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Python UNLP
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Instalación de Python
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../.." class="md-tabs__link">
+      Inicio
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../01/commands/" class="md-tabs__link md-tabs__link--active">
+        Guías
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Python UNLP" class="md-nav__button md-logo" aria-label="Python UNLP" data-md-component="logo">
+      
+  <img src="../../../images/logo.png" alt="logo">
+
+    </a>
+    Python UNLP
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        Inicio
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Guías
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Guías" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Guías
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01/commands/" class="md-nav__link">
+        Comandos
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Instalación de Python
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Instalación de Python
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#instalacion-con-manejador-de-versiones" class="md-nav__link">
+    Instalación con manejador de versiones
+  </a>
+  
+    <nav class="md-nav" aria-label="Instalación con manejador de versiones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#linuxmacos" class="md-nav__link">
+    Linux/MacOS
+  </a>
+  
+    <nav class="md-nav" aria-label="Linux/MacOS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dependencias-necesarias" class="md-nav__link">
+    Dependencias necesarias
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instalacion-con-git-recomendada" class="md-nav__link">
+    Instalación con Git (RECOMENDADA)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instalacion-con-brew-solo-macos" class="md-nav__link">
+    Instalación con brew (solo MacOS)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#windows" class="md-nav__link">
+    Windows
+  </a>
+  
+    <nav class="md-nav" aria-label="Windows">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#instalacion-con-powershell" class="md-nav__link">
+    Instalación con PowerShell
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalacion-directa" class="md-nav__link">
+    Instalación directa
+  </a>
+  
+    <nav class="md-nav" aria-label="Instalación directa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#linuxmacos_1" class="md-nav__link">
+    Linux/MacOS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#windows_1" class="md-nav__link">
+    Windows
+  </a>
+  
+    <nav class="md-nav" aria-label="Windows">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chequeo-de-variable-de-entorno" class="md-nav__link">
+    Chequeo de variable de entorno
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uso-de-pyenv" class="md-nav__link">
+    Uso de pyenv
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03/git/" class="md-nav__link">
+        Guía de Git
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04/git_basico/" class="md-nav__link">
+        Git básico
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05/ssh/" class="md-nav__link">
+        SSH
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06/ssh_gitlab/" class="md-nav__link">
+        Agregar clave SSH a Gitlab
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07/entornos_virtuales/" class="md-nav__link">
+        Entornos virtuales
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../08/manejo_de_paquetes/" class="md-nav__link">
+        Manejo de paquetes en Python
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../09/guias_de_estilo/" class="md-nav__link">
+        Guía de estilos
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../10/merge_request/" class="md-nav__link">
+        Merge Request Gitlab
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../11/jupyter_notebook/" class="md-nav__link">
+        Jupyter notebook
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../12/buenas_practicas/" class="md-nav__link">
+        Buenas prácticas en python
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#instalacion-con-manejador-de-versiones" class="md-nav__link">
+    Instalación con manejador de versiones
+  </a>
+  
+    <nav class="md-nav" aria-label="Instalación con manejador de versiones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#linuxmacos" class="md-nav__link">
+    Linux/MacOS
+  </a>
+  
+    <nav class="md-nav" aria-label="Linux/MacOS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dependencias-necesarias" class="md-nav__link">
+    Dependencias necesarias
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instalacion-con-git-recomendada" class="md-nav__link">
+    Instalación con Git (RECOMENDADA)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instalacion-con-brew-solo-macos" class="md-nav__link">
+    Instalación con brew (solo MacOS)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#windows" class="md-nav__link">
+    Windows
+  </a>
+  
+    <nav class="md-nav" aria-label="Windows">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#instalacion-con-powershell" class="md-nav__link">
+    Instalación con PowerShell
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalacion-directa" class="md-nav__link">
+    Instalación directa
+  </a>
+  
+    <nav class="md-nav" aria-label="Instalación directa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#linuxmacos_1" class="md-nav__link">
+    Linux/MacOS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#windows_1" class="md-nav__link">
+    Windows
+  </a>
+  
+    <nav class="md-nav" aria-label="Windows">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chequeo-de-variable-de-entorno" class="md-nav__link">
+    Chequeo de variable de entorno
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uso-de-pyenv" class="md-nav__link">
+    Uso de pyenv
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="instalacion-de-python">Instalación de Python<a class="headerlink" href="#instalacion-de-python" title="Permanent link">&para;</a></h1>
+<p>Este este año en la materia utilizaremos la versión de <strong>Python 3.11.X</strong>.</p>
+<p>En esta guía vamos a ver distintas formas de realizar la instalación de
+la versión específica de <strong>Python</strong> que se utilizará en la cátedra para distintos
+sistemas operativos.</p>
+<h2 id="instalacion-con-manejador-de-versiones">Instalación con manejador de versiones<a class="headerlink" href="#instalacion-con-manejador-de-versiones" title="Permanent link">&para;</a></h2>
+<p>La forma recomendable de instalar <strong>Python</strong> es por medio de un manejador de
+versiones.</p>
+<p>La idea de usar este tipo de herramientas son:</p>
+<ul>
+<li>Instalar prácticamente cualquier versión de <strong>Python</strong> que necesitemos.</li>
+<li>Permitir tener instaladas múltiples versiones.</li>
+</ul>
+<p>Otro objetivo para esta cátedra es lograr que todos ustedes tengan exactamente
+la misma versión de <strong>Python</strong>.</p>
+<p>La herramienta que vamos a usar es <a href="https://github.com/pyenv/pyenv"><code>pyenv</code></a></p>
+<h3 id="linuxmacos">Linux/MacOS<a class="headerlink" href="#linuxmacos" title="Permanent link">&para;</a></h3>
+<h4 id="dependencias-necesarias">Dependencias necesarias<a class="headerlink" href="#dependencias-necesarias" title="Permanent link">&para;</a></h4>
+<p>Para que <code>pyenv</code> puede realizar la instalación de las distintas versiones de <code>python</code>
+de manera correcta es necesario contar algunas dependencias de su sistema operativo.</p>
+<p>Estas dependencias son librerías que su sistema operativo necesita para que <code>pyenv</code>
+pueda funcionar correctamente. Sin las mismas seguramente ocurran errores a la
+hora de instalar o querer utilizar la herramienta.</p>
+<p>Dependiendo del sistema operativo que utilicen deberán segir las instrucciones
+en el siguiente enlace de la documentación de <code>pyenv</code> - <a href="https://github.com/pyenv/pyenv/wiki#suggested-build-environment">Suggested build
+environment</a>.</p>
+<h4 id="instalacion-con-git-recomendada">Instalación con Git (RECOMENDADA)<a class="headerlink" href="#instalacion-con-git-recomendada" title="Permanent link">&para;</a></h4>
+<p>Hacer el <em>checkout</em> de <code>pyenv</code> en el directorio donde quieras que se instale.
+Un buen lugar puede ser <code>$HOME/.pyenv</code>.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/pyenv/pyenv.git<span class="w"> </span>~/.pyenv
+</code></pre></div>
+<p>Define la variable de entorno <code>PYENV_ROOT</code> para tener disponible el <em>path</em> donde
+fue clonado el repositorio y agrega <code>$PYENV_ROOT/bin</code> a la variable <code>$PATH</code> para
+tener acceso al comando <code>pyenv</code> en la terminal.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;export PYENV_ROOT=&quot;$HOME/.pyenv&quot;&#39;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>~/.bash_profile
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;export PATH=&quot;$PYENV_ROOT/bin:$PATH&quot;&#39;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>~/.bash_profile
+</code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<ul>
+<li>Si usas <strong>ZSH</strong> modifica el comando con <code>~/.zshrc</code> en lugar de
+<code>~/.bash_profile</code>.</li>
+<li>Para <strong>Ubuntu</strong> y <strong>Fedora</strong> usa <code>~/.bashrc</code> en lugar de
+<code>~/.bash_profile</code>.</li>
+</ul>
+</div>
+<p>Finalmente para terminar de configurarlo y tener el autocompletado en la consola
+ejecuta el siguiente comando:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span><span class="s1">&#39;if command -v pyenv 1&gt;/dev/null 2&gt;&amp;1; then\n  eval &quot;$(pyenv init -)&quot;\nfi&#39;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>~/.bash_profile
+</code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Al igual que en el paso anterior reemplaza con <code>~/.zshrc</code> o <code>~/.bashrc</code> en
+  el comando según corresponda.</p>
+</div>
+<p>Luego reiniciar la terminal para que tome los cambios.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Guía completa en el <a href="https://github.com/pyenv/pyenv">README de pyenv</a>.</p>
+</div>
+<h4 id="instalacion-con-brew-solo-macos">Instalación con brew (solo MacOS)<a class="headerlink" href="#instalacion-con-brew-solo-macos" title="Permanent link">&para;</a></h4>
+<p>Se puede instalar <code>pyenv</code> usando el manejador de paquetes
+<a href="https://brew.sh/">Homebrew</a> para MacOS.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>brew<span class="w"> </span>update
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>brew<span class="w"> </span>install<span class="w"> </span>pyenv
+</code></pre></div>
+<h3 id="windows">Windows<a class="headerlink" href="#windows" title="Permanent link">&para;</a></h3>
+<p>Para el caso de Windows existe una herramienta alternativa que nos permite
+tener <code>pyenv</code> para este tipo de sistema operativo.</p>
+<p>La herramienta es <a href="https://github.com/pyenv-win/pyenv-win"><code>pyenv-win</code></a></p>
+<h4 id="instalacion-con-powershell">Instalación con PowerShell<a class="headerlink" href="#instalacion-con-powershell" title="Permanent link">&para;</a></h4>
+<p>Utilizar <strong>PowerShell</strong> para la instalación en windows es la forma recomendada
+en la <a href="https://github.com/pyenv-win/pyenv-win#quick-start">documentación de la herramienta</a>.</p>
+<ol>
+<li>
+<p>Instalar <code>pyenv-win</code> en PowerShell.
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nb">Invoke-WebRequest</span> <span class="n">-UseBasicParsing</span> <span class="n">-Uri</span> <span class="s2">&quot;https://raw.githubusercontent.com/pyenv-win/pyenv-win/master/pyenv-win/install-pyenv-win.ps1&quot;</span> <span class="n">-OutFile</span> <span class="s2">&quot;./install-pyenv-win.ps1&quot;</span><span class="p">;</span> <span class="p">&amp;</span><span class="s2">&quot;./install-pyenv-win.ps1&quot;</span>
+</code></pre></div></p>
+</li>
+<li>
+<p>Re abrir PowerShell</p>
+</li>
+<li>Correr <code>pyenv --version</code> para verificar si la instalación terminó</li>
+<li>Corer <code>pyenv install -l</code> para verificar la lista de versiones de <strong>Python</strong>
+   soportadas por <code>pyenv-win</code></li>
+<li>Correr <code>pyenv install &lt;version&gt;</code> para instalar la versión de <strong>Python</strong> que desea</li>
+<li>Corer <code>pyenv global &lt;version&gt;</code> para setear esa versión de <strong>Python</strong> como global</li>
+<li>
+<p>Verifique que versión de <strong>Python</strong> está utilizando en su path
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>&gt; pyenv version
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>&lt;version&gt; (set by \path\to\.pyenv\pyenv-win\.python-version)
+</code></pre></div></p>
+</li>
+<li>
+<p>Verifique que esa versión de <strong>Python</strong> está funcionando
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>&gt; python -c &quot;import sys; print(sys.executable)&quot;
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>\path\to\.pyenv\pyenv-win\versions\&lt;version&gt;\python.exe
+</code></pre></div></p>
+</li>
+</ol>
+<h2 id="instalacion-directa">Instalación directa<a class="headerlink" href="#instalacion-directa" title="Permanent link">&para;</a></h2>
+<p>En este tipo de instalación se instala directamente el ejecutable de <strong>Python</strong>
+en su sistema operativo.</p>
+<p>Este tipo de instalación <strong>no es la recomendable</strong> dado que sólo nos permite
+tener una sola versión de <strong>Python</strong> instalada sin problemas. En caso de
+instalar más de una versión puede aparecer distintos tipos de conflictos.</p>
+<h3 id="linuxmacos_1">Linux/MacOS<a class="headerlink" href="#linuxmacos_1" title="Permanent link">&para;</a></h3>
+<p>Para estos sistemas operativos la instalación directa no es recomendable dado
+que puede causar muchos conflictos con las versiones de instaladas en el
+sistema operativo por defecto.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Les recomendamos que utilicen un manejador de versiones para estos operativos.</p>
+</div>
+<h3 id="windows_1">Windows<a class="headerlink" href="#windows_1" title="Permanent link">&para;</a></h3>
+<p>Estos son los enlaces para los ejecutables de Windows:</p>
+<ul>
+<li><a href="https://www.python.org/ftp/python/3.11.2/python-3.11.2.exe">Instalador ejecutable para Windows 32bits</a></li>
+<li><a href="https://www.python.org/ftp/python/3.11.2/python-3.11.2-amd64.exe">Instalador ejecutable para Windows 64bits</a></li>
+<li><a href="https://www.python.org/ftp/python/3.11.2/python-3.11.2-arm64.exe">Instalador ejecutable para AMR64</a></li>
+</ul>
+<p>Si necesita alguna alternativa distinta pueda obtener más opciones en el
+<a href="https://www.python.org/downloads/release/python-3112/">siguiente enlace</a>.</p>
+<p>Al descargar el instalador debe ejecutarlo y seguir los pasos que ofrece.
+La primer ventana que se puede visualizar el la siguiente:</p>
+<p><center>
+<img alt="Python Windows installer 1" src="../img/01_win.png" />
+</center></p>
+<p>Si es la primer versión de <strong>Python</strong> que instala se recomienda seguir la
+instalación simple ("Install Now" en la imagen).</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Tener en cuenta de seleccionar el checkbox de abajo para agregar el
+ejecutable de <strong>Python</strong> al PATH del sistema. Esto es fundamental para
+poder ejecutar <strong>Python</strong> correctamente.</p>
+<p><img alt="Python Windows installer 2" src="../img/02_win.png" /></p>
+</div>
+<p>Si todo salió correctamente debería ver una imagen similar a esta:</p>
+<p><center>
+<img alt="Python Windows installer 3" src="../img/03_win.png" />
+</center></p>
+<h4 id="chequeo-de-variable-de-entorno">Chequeo de variable de entorno<a class="headerlink" href="#chequeo-de-variable-de-entorno" title="Permanent link">&para;</a></h4>
+<p>Para verificar si tenemos <strong>Python</strong> correctamente instalado vamos a hacer uso
+de una terminal o consola de comandos.</p>
+<p>Para abrir el <code>cmd</code> tenemos al menos las siguientes dos opciones:</p>
+<ul>
+<li>
+<p>En el buscador de windows ponemos "cmd" y seleccionamos la primer opción.
+<center>
+<img alt="Python Windows installer 4" src="../img/04_win.png" />
+</center></p>
+</li>
+<li>
+<p>Presionamos las teclas <code>win</code> + <code>R</code>, ponemos "cmd", presionamos <code>enter</code>.
+<center>
+<img alt="Python Windows installer 5" src="../img/05_win.png" />
+</center></p>
+</li>
+</ul>
+<p>Para cualquiera de las opciones nos tiene que abrir la siguiente ventana:</p>
+<p><center>
+<img alt="Python Windows installer 6" src="../img/06_win.png" />
+</center></p>
+<p>Para verificar si la instalación de Python fué correcta vamos a ejecutar el intérprete interactivo de Python.
+Lo podemos abrir escribiendo "python" en el cmd y prescionando la tecla <code>enter</code>.
+Debería aparecer algo como esto:</p>
+<p><center>
+<img alt="Python Windows installer 7" src="../img/07_win.png" />
+</center></p>
+<p>En esta terminal interactiva ya podemos ejecutar código Python.</p>
+<h2 id="uso-de-pyenv">Uso de <code>pyenv</code><a class="headerlink" href="#uso-de-pyenv" title="Permanent link">&para;</a></h2>
+<p>Para buscar que versión de <strong>Python</strong> queremos instalar podemos usar:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>pyenv<span class="w"> </span>install<span class="w"> </span><span class="m">3</span>.6.8
+</code></pre></div>
+<p>Ahora podemos seleccionar esta versión como global</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>pyenv<span class="w"> </span>global<span class="w"> </span><span class="m">3</span>.6.8
+</code></pre></div>
+<p>o como versión local en el directorio que nos encontremos</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>pyenv<span class="w"> </span><span class="nb">local</span><span class="w"> </span><span class="m">3</span>.6.8
+</code></pre></div>
+<p>Pueden encontrar la documentación completa del uso en la <a href="https://github.com/pyenv/pyenv#usage">documentación oficial
+de la herramienta</a>.</p>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../../01/commands/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Comandos" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Comandos
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../../03/git/" class="md-footer__link md-footer__link--next" aria-label="Next: Guía de Git" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Guía de Git
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+      
+      
+    
+    <a href="https://gitlab.catedras.linti.unlp.edu.ar/python2024/" target="_blank" rel="noopener" title="gitlab.catedras.linti.unlp.edu.ar" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="m510.486 284.482-27.262-83.963c.012.038.016.077.028.115-.013-.044-.021-.088-.033-.132v-.01L429.1 33.871a21.328 21.328 0 0 0-20.445-14.6A21.038 21.038 0 0 0 388.466 34l-51.372 158.154H175L123.533 33.989a21.033 21.033 0 0 0-20.183-14.715h-.113A21.467 21.467 0 0 0 82.86 34L28.888 200.475l-.008.021c-.013.042-.019.084-.033.127.012-.038.017-.077.029-.115L1.514 284.482a30.6 30.6 0 0 0 11.117 34.283l236.262 171.662c.035.026.074.041.109.067.1.072.2.146.3.214-.1-.065-.187-.136-.282-.2.015.012.033.02.05.031l.041.024h.006a11.992 11.992 0 0 0 1.137.7c.054.03.1.068.157.1.033.016.064.038.1.054s.053.02.077.032.038.015.056.023c.044.021.092.034.136.057.205.1.421.178.633.264.2.082.389.177.592.248l.025.011c.034.012.064.028.1.04s.083.032.125.046l.05.012c.053.016.11.024.163.039.019.006.042.009.063.015.284.086.579.148.872.213.115.026.225.062.341.083.017 0 .032.009.05.012.038.008.073.021.112.027.062.011.122.031.186.04.049.007.1 0 .151.012h.033a11.918 11.918 0 0 0 1.7.136h.019a11.971 11.971 0 0 0 1.7-.136h.033c.05-.008.1 0 .153-.012s.124-.029.187-.04c.038-.006.073-.019.11-.027.017 0 .032-.009.049-.012.118-.023.231-.059.349-.084.288-.064.578-.126.861-.21.019-.006.039-.008.059-.014.055-.017.113-.024.169-.041.016-.006.035-.007.051-.012.044-.013.086-.032.129-.047s.063-.028.1-.041l.026-.01c.214-.076.417-.175.627-.261s.394-.154.584-.245c.047-.023.1-.036.142-.059.018-.009.04-.015.058-.024s.053-.02.078-.033.068-.04.1-.056c.056-.028.106-.069.161-.1a12.341 12.341 0 0 0 1.132-.695c.029-.02.062-.035.092-.056.008-.006.017-.009.024-.015.035-.026.076-.043.11-.068l236.3-171.666a30.6 30.6 0 0 0 11.107-34.281ZM408.8 49.48l46.342 142.674H362.46Zm-305.6 0 46.428 142.675h-92.68ZM26.817 299.251a6.526 6.526 0 0 1-2.361-7.308l20.34-62.42L193.835 420.6Zm38.245-82.972h92.411l65.881 202.941Zm183.416 273.83c-.047-.038-.092-.079-.138-.118l-.028-.026a8.366 8.366 0 0 1-.268-.231c-.172-.15-.341-.3-.5-.462.014.012.029.022.043.035l.055.046a12.191 12.191 0 0 0 1.091.929l.012.011c.018.013.033.03.051.045-.107-.075-.216-.148-.318-.229Zm7.514-48.482L217.226 322.21l-34.387-105.931h146.414Zm7.935 48.107c-.091.079-.178.157-.27.233l-.032.028c-.047.038-.091.079-.136.117-.1.08-.209.152-.313.229.018-.013.033-.032.053-.044l.009-.009a11.69 11.69 0 0 0 1.086-.926c.014-.013.03-.024.044-.036s.038-.03.054-.047c-.16.156-.322.307-.495.455Zm90.7-273.455h92.4l-18.91 24.23-139.468 178.7Zm130.567 82.967L318.2 420.563l149.084-191.025 20.258 62.393a6.528 6.528 0 0 1-2.353 7.315Z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://discord.gg/WW2v5Rq3Ke" target="_blank" rel="noopener" title="discord.gg" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541ZM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241Zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241Z"/></svg>
+    </a>
+  
+    
+    
+    <a href="#" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M448 336V48c0-26.51-21.5-48-48-48H96C42.98 0 0 42.98 0 96v320c0 53.02 42.98 96 96 96h320c17.67 0 32-14.33 32-31.1 0-11.72-6.607-21.52-16-27.1v-81.36c9.8-9.64 16-22.24 16-36.44zM143.1 128h192c9.7 0 16.9 7.2 16.9 16s-7.2 16-16 16H143.1c-7.9 0-15.1-7.2-15.1-16s7.2-16 15.1-16zm0 64h192c9.7 0 16.9 7.2 16.9 16s-7.2 16-16 16H143.1c-7.9 0-15.1-7.2-15.1-16s7.2-16 15.1-16zM384 448H96c-17.67 0-32-14.33-32-32s14.33-32 32-32h288v64z"/></svg>
+    </a>
+  
+    
+    
+    <a href="mailto: python@info.unlp.edu.ar" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M464 64c26.5 0 48 21.49 48 48 0 15.1-7.1 29.3-19.2 38.4L275.2 313.6a32.1 32.1 0 0 1-38.4 0L19.2 150.4C7.113 141.3 0 127.1 0 112c0-26.51 21.49-48 48-48h416zM217.6 339.2a63.9 63.9 0 0 0 76.8 0L512 176v208c0 35.3-28.7 64-64 64H64c-35.35 0-64-28.7-64-64V176l217.6 163.2z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticy"], "search": "../../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      
+    
+  </body>
+</html>
