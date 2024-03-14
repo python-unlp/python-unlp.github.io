@@ -416,26 +416,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#windows_1" class="md-nav__link">
-    Windows
-  </a>
-  
-    <nav class="md-nav" aria-label="Windows">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#chequeo-de-variable-de-entorno" class="md-nav__link">
-    Chequeo de variable de entorno
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -711,26 +691,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#windows_1" class="md-nav__link">
-    Windows
-  </a>
-  
-    <nav class="md-nav" aria-label="Windows">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#chequeo-de-variable-de-entorno" class="md-nav__link">
-    Chequeo de variable de entorno
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -832,8 +792,17 @@ tener <code>pyenv</code> para este tipo de sistema operativo.</p>
 en la <a href="https://github.com/pyenv-win/pyenv-win#quick-start">documentación de la herramienta</a>.</p>
 <ol>
 <li>
-<p>Instalar <code>pyenv-win</code> en PowerShell.
-   <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nb">Invoke-WebRequest</span> <span class="n">-UseBasicParsing</span> <span class="n">-Uri</span> <span class="s2">&quot;https://raw.githubusercontent.com/pyenv-win/pyenv-win/master/pyenv-win/install-pyenv-win.ps1&quot;</span> <span class="n">-OutFile</span> <span class="s2">&quot;./install-pyenv-win.ps1&quot;</span><span class="p">;</span> <span class="p">&amp;</span><span class="s2">&quot;./install-pyenv-win.ps1&quot;</span>
+<p>Habilitar la ejecución de scripts en PowerShell, para eso abrir PowerShell como administrador
+y ejecutar:
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nb">Set-ExecutionPolicy</span> <span class="n">RemoteSigned</span>
+</code></pre></div></p>
+</li>
+<li>
+<p>Cerrar la ventana anterior y abrir PowerShell como usuario normal (no administrador)</p>
+</li>
+<li>
+<p>Instalar <code>pyenv-win</code> en PowerShell ejecutando el siguiente comando:
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nb">Invoke-WebRequest</span> <span class="n">-UseBasicParsing</span> <span class="n">-Uri</span> <span class="s2">&quot;https://raw.githubusercontent.com/pyenv-win/pyenv-win/master/pyenv-win/install-pyenv-win.ps1&quot;</span> <span class="n">-OutFile</span> <span class="s2">&quot;./install-pyenv-win.ps1&quot;</span><span class="p">;</span> <span class="p">&amp;</span><span class="s2">&quot;./install-pyenv-win.ps1&quot;</span>
 </code></pre></div></p>
 </li>
 <li>
@@ -846,14 +815,14 @@ en la <a href="https://github.com/pyenv-win/pyenv-win#quick-start">documentació
 <li>Corer <code>pyenv global &lt;version&gt;</code> para setear esa versión de <strong>Python</strong> como global</li>
 <li>
 <p>Verifique que versión de <strong>Python</strong> está utilizando en su path
-   <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>&gt; pyenv version
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>&lt;version&gt; (set by \path\to\.pyenv\pyenv-win\.python-version)
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>&gt; pyenv version
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>&lt;version&gt; (set by \path\to\.pyenv\pyenv-win\.python-version)
 </code></pre></div></p>
 </li>
 <li>
 <p>Verifique que esa versión de <strong>Python</strong> está funcionando
-   <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>&gt; python -c &quot;import sys; print(sys.executable)&quot;
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>\path\to\.pyenv\pyenv-win\versions\&lt;version&gt;\python.exe
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>&gt; python -c &quot;import sys; print(sys.executable)&quot;
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>\path\to\.pyenv\pyenv-win\versions\&lt;version&gt;\python.exe
 </code></pre></div></p>
 </li>
 </ol>
@@ -871,71 +840,84 @@ sistema operativo por defecto.</p>
 <p class="admonition-title">Warning</p>
 <p>Les recomendamos que utilicen un manejador de versiones para estos operativos.</p>
 </div>
-<h3 id="windows_1">Windows<a class="headerlink" href="#windows_1" title="Permanent link">&para;</a></h3>
-<p>Estos son los enlaces para los ejecutables de Windows:</p>
-<ul>
-<li><a href="https://www.python.org/ftp/python/3.11.2/python-3.11.2.exe">Instalador ejecutable para Windows 32bits</a></li>
-<li><a href="https://www.python.org/ftp/python/3.11.2/python-3.11.2-amd64.exe">Instalador ejecutable para Windows 64bits</a></li>
-<li><a href="https://www.python.org/ftp/python/3.11.2/python-3.11.2-arm64.exe">Instalador ejecutable para AMR64</a></li>
-</ul>
-<p>Si necesita alguna alternativa distinta pueda obtener más opciones en el
-<a href="https://www.python.org/downloads/release/python-3112/">siguiente enlace</a>.</p>
-<p>Al descargar el instalador debe ejecutarlo y seguir los pasos que ofrece.
-La primer ventana que se puede visualizar el la siguiente:</p>
-<p><center>
-<img alt="Python Windows installer 1" src="../img/01_win.png" />
-</center></p>
-<p>Si es la primer versión de <strong>Python</strong> que instala se recomienda seguir la
-instalación simple ("Install Now" en la imagen).</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Tener en cuenta de seleccionar el checkbox de abajo para agregar el
-ejecutable de <strong>Python</strong> al PATH del sistema. Esto es fundamental para
-poder ejecutar <strong>Python</strong> correctamente.</p>
-<p><img alt="Python Windows installer 2" src="../img/02_win.png" /></p>
-</div>
-<p>Si todo salió correctamente debería ver una imagen similar a esta:</p>
-<p><center>
-<img alt="Python Windows installer 3" src="../img/03_win.png" />
-</center></p>
-<h4 id="chequeo-de-variable-de-entorno">Chequeo de variable de entorno<a class="headerlink" href="#chequeo-de-variable-de-entorno" title="Permanent link">&para;</a></h4>
-<p>Para verificar si tenemos <strong>Python</strong> correctamente instalado vamos a hacer uso
-de una terminal o consola de comandos.</p>
-<p>Para abrir el <code>cmd</code> tenemos al menos las siguientes dos opciones:</p>
-<ul>
-<li>
-<p>En el buscador de windows ponemos "cmd" y seleccionamos la primer opción.
+<!--
+### Windows
+
+Estos son los enlaces para los ejecutables de Windows:
+
+- [Instalador ejecutable para Windows 32bits](https://www.python.org/ftp/python/3.11.2/python-3.11.2.exe)
+- [Instalador ejecutable para Windows 64bits](https://www.python.org/ftp/python/3.11.2/python-3.11.2-amd64.exe)
+- [Instalador ejecutable para AMR64](https://www.python.org/ftp/python/3.11.2/python-3.11.2-arm64.exe)
+
+Si necesita alguna alternativa distinta pueda obtener más opciones en el
+[siguiente enlace](https://www.python.org/downloads/release/python-3112/).
+
+Al descargar el instalador debe ejecutarlo y seguir los pasos que ofrece.
+La primer ventana que se puede visualizar el la siguiente:
+
 <center>
-<img alt="Python Windows installer 4" src="../img/04_win.png" />
-</center></p>
-</li>
-<li>
-<p>Presionamos las teclas <code>win</code> + <code>R</code>, ponemos "cmd", presionamos <code>enter</code>.
+![Python Windows installer 1](img/01_win.png)
+</center>
+
+Si es la primer versión de **Python** que instala se recomienda seguir la
+instalación simple ("Install Now" en la imagen).
+
+!!! warning
+
+    Tener en cuenta de seleccionar el checkbox de abajo para agregar el
+    ejecutable de **Python** al PATH del sistema. Esto es fundamental para
+    poder ejecutar **Python** correctamente.
+
+    ![Python Windows installer 2](img/02_win.png)
+
+Si todo salió correctamente debería ver una imagen similar a esta:
+
 <center>
-<img alt="Python Windows installer 5" src="../img/05_win.png" />
-</center></p>
-</li>
-</ul>
-<p>Para cualquiera de las opciones nos tiene que abrir la siguiente ventana:</p>
-<p><center>
-<img alt="Python Windows installer 6" src="../img/06_win.png" />
-</center></p>
-<p>Para verificar si la instalación de Python fué correcta vamos a ejecutar el intérprete interactivo de Python.
-Lo podemos abrir escribiendo "python" en el cmd y prescionando la tecla <code>enter</code>.
-Debería aparecer algo como esto:</p>
-<p><center>
-<img alt="Python Windows installer 7" src="../img/07_win.png" />
-</center></p>
-<p>En esta terminal interactiva ya podemos ejecutar código Python.</p>
+![Python Windows installer 3](img/03_win.png)
+</center>
+
+#### Chequeo de variable de entorno
+
+Para verificar si tenemos **Python** correctamente instalado vamos a hacer uso
+de una terminal o consola de comandos.
+
+Para abrir el `cmd` tenemos al menos las siguientes dos opciones:
+
+- En el buscador de windows ponemos "cmd" y seleccionamos la primer opción.
+<center>
+![Python Windows installer 4](img/04_win.png)
+</center>
+
+- Presionamos las teclas `win` + `R`, ponemos "cmd", presionamos `enter`.
+<center>
+![Python Windows installer 5](img/05_win.png)
+</center>
+
+Para cualquiera de las opciones nos tiene que abrir la siguiente ventana:
+
+<center>
+![Python Windows installer 6](img/06_win.png)
+</center>
+
+Para verificar si la instalación de Python fué correcta vamos a ejecutar el intérprete interactivo de Python.
+Lo podemos abrir escribiendo "python" en el cmd y prescionando la tecla `enter`.
+Debería aparecer algo como esto:
+
+<center>
+![Python Windows installer 7](img/07_win.png)
+</center>
+
+En esta terminal interactiva ya podemos ejecutar código Python.
+-->
 <h2 id="uso-de-pyenv">Uso de <code>pyenv</code><a class="headerlink" href="#uso-de-pyenv" title="Permanent link">&para;</a></h2>
 <p>Para buscar que versión de <strong>Python</strong> queremos instalar podemos usar:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>pyenv<span class="w"> </span>install<span class="w"> </span><span class="m">3</span>.6.8
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>pyenv<span class="w"> </span>install<span class="w"> </span><span class="m">3</span>.11.7
 </code></pre></div>
 <p>Ahora podemos seleccionar esta versión como global</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>pyenv<span class="w"> </span>global<span class="w"> </span><span class="m">3</span>.6.8
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>pyenv<span class="w"> </span>global<span class="w"> </span><span class="m">3</span>.11.7
 </code></pre></div>
 <p>o como versión local en el directorio que nos encontremos</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>pyenv<span class="w"> </span><span class="nb">local</span><span class="w"> </span><span class="m">3</span>.6.8
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>pyenv<span class="w"> </span><span class="nb">local</span><span class="w"> </span><span class="m">3</span>.11.7
 </code></pre></div>
 <p>Pueden encontrar la documentación completa del uso en la <a href="https://github.com/pyenv/pyenv#usage">documentación oficial
 de la herramienta</a>.</p>
