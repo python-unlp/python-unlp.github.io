@@ -585,9 +585,9 @@
 
 
 <h1 id="entornos-virtuales">Entornos virtuales<a class="headerlink" href="#entornos-virtuales" title="Permanent link">&para;</a></h1>
-<p><strong>Virtualenv</strong> es una herramienta usada para crear un ambiente aislado de
+<p><strong>venv</strong> es una herramienta usada para crear un ambiente aislado de
 <strong>Python</strong>. Este ambiente tiene su propio directorio de instalación que no
-comparte librerías con otros ambientes <strong>virtualenv</strong>.</p>
+comparte librerías con otros ambientes virtuales ni con el sistema operativo.</p>
 <p>Esto tiene la ventaja que separa las librerías específicas que necesitamos en
 cada entorno virtual.</p>
 <p>Es útil hacer esta separación porque en el desarrollo de software es muy común
@@ -596,55 +596,57 @@ librería.</p>
 <p>Por ejemplo, podemos tener un proyecto que hicimos hace un tiempo que usa una
 versión de <code>numpy</code> que ahora no es la última. Para ese proyecto puede estar
 perfecta esa versión y algunas veces puede ser peligroso actualizar una
-librería. Ahora si vamos a arrancar un nuevo proyecto seguramente queremos poder
-usar la última versión de <code>numpy</code>.</p>
-<p>La solución que nos da <strong>virtualenv</strong> es crear la cantidad de directorios
-virtuales que queramos con su versión de <strong>Python</strong> y sus librerías externas de
-forma aislada.</p>
-<p>Una práctica muy común con <strong>virtualenv</strong> es tener un entorno virtual por
+librería. Por el contrario si vamos a arrancar un nuevo proyecto seguramente
+queremos poder usar la última versión de <code>numpy</code>.</p>
+<p>La solución que nos da <strong>venv</strong> es crear la cantidad de directorios
+virtuales que queramos con su propia versión de <strong>Python</strong> y sus propias librerías
+externas de forma aislada.</p>
+<p>Una práctica muy común con <strong>venv</strong> es tener un entorno virtual por
 proyecto aislando cada proyecto y evitando cualquier problema de compatibilidad.</p>
 <h2 id="como-crear-un-entorno-virtual">¿Cómo crear un entorno virtual?<a class="headerlink" href="#como-crear-un-entorno-virtual" title="Permanent link">&para;</a></h2>
-<p>Primero necesitamos tener disponible la librería <strong>virtualenv</strong>. La instalamos
-de la siguiente manera:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>virtualenv
-</code></pre></div>
 <p>Para crear un entorno virtual primero tenemos que ubicarnos en el directorio
-donde está el código de nuestra aplicación</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>mkdir<span class="w"> </span>mi_proyecto
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">cd</span><span class="w"> </span>mi_proyecto
+donde está el código de nuestra aplicación.</p>
+<p>En este ejemplo crearemos un directorio para un nuevo proyecto y nos ubicaremos
+en el mismo:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>mkdir<span class="w"> </span>mi_proyecto
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">cd</span><span class="w"> </span>mi_proyecto
 </code></pre></div>
 <p>Ahora vamos a crear un directorio virtual llamado <code>venv</code> para la versión de
 <strong>Python</strong> que hayamos configurado como global</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>virtualenv<span class="w"> </span>-p<span class="w"> </span>python<span class="w"> </span>venv
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>venv
 </code></pre></div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Recuerden tener en cuenta tener configurada la versión de Python con la que
-quieren arrancar el proyecto. En nuestro caso la versión <code>3.10.2</code></p>
+quieren arrancar el proyecto. En nuestro caso la versión <code>3.11</code></p>
 <p>Se pueden asegurar ejecutando:</p>
 <p><code>$ python --version</code></p>
+<p>Si la versión no coincide e instalaron <strong>Python</strong> con venv, pueden usar
+<code>pyenv global 3.11.x</code> para configurarla o bien <code>pyenv shell 3.11.x</code> para
+usarla temporalmente (donde <code>x</code> es el último dígito de la versión específica
+que instalaron).</p>
 </div>
 <p>Ya estamos listos para usar nuestro entorno virtual. Tanto la versión de
 <strong>Python</strong> con las librerías se van a almacenar dentro del directorio <code>venv</code>
 creado.</p>
 <h2 id="como-usar-mi-entorno-virtual">¿Como usar mi entorno virtual?<a class="headerlink" href="#como-usar-mi-entorno-virtual" title="Permanent link">&para;</a></h2>
 <p>Para activar el entorno ejecutamos</p>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">source</span><span class="w"> </span>venv/bin/activate<span class="w">  </span><span class="c1"># Linux</span>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">source</span><span class="w"> </span>venv/bin/activate<span class="w">  </span><span class="c1"># Linux</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>venv<span class="se">\S</span>cripts<span class="se">\a</span>ctivate<span class="w">  </span><span class="c1"># Windows</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>venv<span class="se">\S</span>cripts<span class="se">\a</span>ctivate<span class="w">  </span><span class="c1"># Windows</span>
 </code></pre></div></p>
 <p>Ahora si localizamos donde está el ejecutable de <strong>Python</strong> que utilizamos
 veremos que es el que está dentro del directorio virtual</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>which<span class="w"> </span>python
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>mi_proyecto/venv/bin/python
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>which<span class="w"> </span>python
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>mi_proyecto/venv/bin/python
 </code></pre></div>
 <p>Es necesario desactivar si queremos volver a usar el <strong>Python</strong> que instalamos
 globalmente</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>deactivate
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>deactivate
 </code></pre></div>
 <p>Ahora si necesitamos instalar una librería tenemos que activar el entorno y
 usar <code>pip</code></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>pip<span class="w"> </span>install<span class="w"> </span>numpy
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>pip<span class="w"> </span>install<span class="w"> </span>numpy
 </code></pre></div>
 
               
