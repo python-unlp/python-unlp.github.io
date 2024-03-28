@@ -616,7 +616,7 @@
 <hr />
 <h3 id="objetivo">Objetivo<a class="headerlink" href="#objetivo" title="Permanent link">&para;</a></h3>
 <p>La presente guía pretende ser un punteo de los pasos a seguir para añadir cualquier dependencia/librería a nuestro sistema.</p>
-<p>Cuando hablamos de dependencia -en este documento- nos referimos justamente a cualquier librería externa y NO incluida de manera estándar por Python que nuestro sistema la requiere para funcionar.</p>
+<p>Cuando hablamos de dependencia -en este documento- nos referimos justamente a cualquier librería externa NO incluida de manera estándar por Python que nuestro sistema la requiere para funcionar.</p>
 <p>Algunos de los ejemplos más comunes es la incorporación de:</p>
 <ul>
 <li>pandas</li>
@@ -665,9 +665,10 @@
 </code></pre></div></p>
 </li>
 <li>
-<p>En caso de trabajar en equipo cualquier integrante del equipo ante un cambio en este archivo debe ejecutar en su entorno virtual:
+<p>En caso de trabajar en equipo cualquier nuevo integrante del mismo (o ante un cambio en este archivo) debe ejecutar en su entorno virtual:
     <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
-</code></pre></div></p>
+</code></pre></div>
+    Este comando posibilita instalar todas las dependencias del sistema evitando tener que ingresarlas una por una.</p>
 </li>
 </ol>
 <p><strong>Procurar siempre tener el </strong>requirements.txt<strong> actualizado a las necesidades de nuestro sistema, ya que en él se establecen las librerías y versiones para las cuales garantizamos que nuestro sistema funciona correctamente.</strong></p>
