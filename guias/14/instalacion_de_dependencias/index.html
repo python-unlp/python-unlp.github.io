@@ -13,7 +13,7 @@
     
     
       
-        <title>Git básico - Python UNLP</title>
+        <title>Añadiendo dependencias a nuestro sistema - Python UNLP</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#git-basico" class="md-skip">
+        <a href="#anadiendo-dependencias-a-nuestro-sistema" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Git básico
+              Añadiendo dependencias a nuestro sistema
             
           </span>
         </div>
@@ -354,66 +354,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Git básico
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../04/git_basico/" class="md-nav__link">
         Git básico
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#introduccion" class="md-nav__link">
-    Introducción
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#crear-una-cuenta-de-github" class="md-nav__link">
-    Crear una cuenta de Github
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#crear-repositorio-en-git" class="md-nav__link">
-    Crear repositorio en Git
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -493,11 +438,59 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../14/instalacion_de_dependencias/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Añadiendo dependencias a nuestro sistema
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Añadiendo dependencias a nuestro sistema
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objetivo" class="md-nav__link">
+    Objetivo
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#paso-a-paso" class="md-nav__link">
+    Paso a paso
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -592,22 +585,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#introduccion" class="md-nav__link">
-    Introducción
+  <a href="#objetivo" class="md-nav__link">
+    Objetivo
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#crear-una-cuenta-de-github" class="md-nav__link">
-    Crear una cuenta de Github
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#crear-repositorio-en-git" class="md-nav__link">
-    Crear repositorio en Git
+  <a href="#paso-a-paso" class="md-nav__link">
+    Paso a paso
   </a>
   
 </li>
@@ -626,85 +612,69 @@
                 
 
 
-<h1 id="git-basico">Git básico<a class="headerlink" href="#git-basico" title="Permanent link">&para;</a></h1>
-<h2 id="introduccion">Introducción<a class="headerlink" href="#introduccion" title="Permanent link">&para;</a></h2>
-<p>Como ya vimos <strong>Git</strong> es una herramienta muy buena que nos permite manejar
-versiones de nuestro código de manera distribuida con nuestro equipo de
-trabajo.</p>
-<p>Para poder realizar esto es necesario contar con un <strong>Servidor de
-Git</strong> aparte de tener la herramienta instalada en su máquina.</p>
-<p>En esta oportunidad vamos a analizar un poco <a href="https://github.com/">GitHub</a> que
-es el <strong>Servidor de Git</strong> más popular actualmente.</p>
-<h2 id="crear-una-cuenta-de-github">Crear una cuenta de Github<a class="headerlink" href="#crear-una-cuenta-de-github" title="Permanent link">&para;</a></h2>
-<p>Para crear una cuenta tienen que entrar a la
-<a href="https://github.com/">web de Github</a> y registrarse (Sing up).</p>
-<h2 id="crear-repositorio-en-git">Crear repositorio en Git<a class="headerlink" href="#crear-repositorio-en-git" title="Permanent link">&para;</a></h2>
-<p>Ahora vamos a crear nuestro primer repositorio en <strong>Git</strong>, agregarle algunos
-archivos y publicarlos en el Servidor de git GitHub.</p>
-<p>Realiza la instalación de la herramienta <strong>Git</strong> en tu máquina. Tienes una guía
-provista por la cátedra en el <a href="../../03/git/">siguiente enlace</a>.</p>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>Recorda también realizar la correcta configuración de Git antes de
-usarlo poniendo tu <em>nombre</em> y tu <em>mail</em> que serán datos requeridos para
-cuando quiera hacer tu primer commit.</p>
-</div>
-<p>Crear un repositorio local con <strong>Git</strong> en tu máquina dentro de un directorio
-llamado <code>ejemplo_python</code>.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>mkdir<span class="w"> </span>ejemplo_python
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>git<span class="w"> </span>init
-</code></pre></div>
-<p><img alt="Git Init" src="../img/01_git_init.png" /></p>
-<p>Mueve dentro de este directorio el programa <code>run.py</code> que escribiste en el punto
-2 de la sección Python.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">cd</span><span class="w"> </span>ejemplo_python
-</code></pre></div>
-<p>Ahora notarás que hay cambios en tu <strong>repositorio Git local</strong>:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>git<span class="w"> </span>status
-</code></pre></div>
-<p><img alt="Create app" src="../img/02_git_status.png" /></p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-</div>
-<p>Recorda siempre elegir un mensaje adecuado para los commits cuando uses <strong>Git</strong>.</p>
-<p>Para agregar este archivo al versionado de <strong>Git</strong> debemos ejecutar:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>git<span class="w"> </span>add<span class="w"> </span>app.py
-</code></pre></div>
-<p><img alt="Git add" src="../img/03_git_status.png" /></p>
-<p>Procede a crear el primer commit con ese archivo.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Mensaje de commit&quot;</span>
-</code></pre></div>
-<p><img alt="Git commit" src="../img/04_git_commit_log.png" /></p>
-<p>Agrega un <code>README.md</code> que servirá de documentación para el repositorio donde
-esté el nombre y número de alumno escrito. Modifica la aplicación principal
-también. <strong>Nuevamente notarás cambios en el repositorio local</strong>.</p>
-<p><img alt="Git status" src="../img/05_status.png" /></p>
-<p>Crea un segundo commit</p>
-<p><img alt="Git Commit" src="../img/06_commit.png" /></p>
-<p>Hasta el momento todos las acciones realizadas fueron en tu máquina.</p>
-<p>Ahora llega el turno de interactuar con el <strong>Servidor de Git</strong> (Github en
-este caso) que es el lugar en donde estará disponible el código para
-compartirlo.</p>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>Para esto es necesario que tengas una cuenta en Github así que si no
-cuentas con una aún puedes <a href="https://github.com/join">crearla aquí</a>.</p>
-</div>
-<p><img alt="Create repo" src="../img/07_create_repo.png" /></p>
-<p>Para usar GitHub de forma segura tienes dos opciones:</p>
+<h1 id="anadiendo-dependencias-a-nuestro-sistema">Añadiendo dependencias a nuestro sistema<a class="headerlink" href="#anadiendo-dependencias-a-nuestro-sistema" title="Permanent link">&para;</a></h1>
+<hr />
+<h3 id="objetivo">Objetivo<a class="headerlink" href="#objetivo" title="Permanent link">&para;</a></h3>
+<p>La presente guía pretende ser un punteo de los pasos a seguir para añadir cualquier dependencia/librería a nuestro sistema.</p>
+<p>Cuando hablamos de dependencia -en este documento- nos referimos justamente a cualquier librería externa y NO incluida de manera estándar por Python que nuestro sistema la requiere para funcionar.</p>
+<p>Algunos de los ejemplos más comunes es la incorporación de:</p>
 <ul>
-<li>Generar una clave SSH y agregarla al usuario (Este es lo recomandado. Seguir
-  la guía de <a href="../../05/ssh/">SSH</a>).</li>
-<li>Usar el método HTTP, pero deberás escribir tu usuario y contraseña para cada
-  operación con el servidor Github.</li>
+<li>pandas</li>
+<li>numpy</li>
+<li>matplotlib</li>
+<li>requests</li>
+<li>path</li>
 </ul>
-<p>Con tu cuenta creada debes crear tu repositorio remoto dentro de Github.</p>
-<p>Con tu nuevo repositorio creado resta realizar el enlace entre el repositorio
-local en el que viniste trabajando y el repositorio remoto que recién se creó.
-Para eso tienes que actualizar tu remote dentro de tu repositorio local con la
-url del repositorio remoto (ver comandos sugeridos al crear el repositorio en Github).</p>
-<p>Si todo está correctamente configurado, sólo resta hacer el "push" de los cambios.</p>
+<hr />
+<h3 id="paso-a-paso">Paso a paso<a class="headerlink" href="#paso-a-paso" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p>Se recomienda, y en esta materia utilizamos, los entornos virtuales de Python como <em>ambiente controlado</em> para la instalación de librerías. Por lo tanto el primer paso es activar el entorno virtual (se recomienda leer la guía denominada <strong>Entornos virtuales</strong> si es necesario).</p>
+</li>
+<li>
+<p>Realizar la instalación mediante el manejador de paquetes Pip de la librería necesaria para el sistema:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>jupyter
+</code></pre></div>
+</li>
+</ol>
+<p><strong>En este punto ya tenemos la librería disponible para ser importada y utilizada en nuestro sistema, sin embargo, -como buena practica de programación- debemos dejar explícitas las librerías utilizadas por nuestro sistema. Es importante recordar que la librería fue instalada en nuestro entorno virtual pero este no es subido al repositorio por lo que si deseamos trabajar en equipo no hemos establecido cuales son los requerimientos del sistema</strong>. </p>
+<ol start="3">
+<li>
+<p>Mediante el comando pip freeze obtener la versión de la librería instaladas (este paso es necesario solo si al momento de instalar la librería no se especificó la versión)
+    <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>pip<span class="w"> </span>freeze
+</code></pre></div></p>
+<p>Del listado solo copiar la librería y su versión, debería ser algo similar a:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nv">jupyter</span><span class="o">==</span><span class="m">1</span>.0.0
+</code></pre></div></p>
+</li>
+<li>
+<p>Crear un archivo denominado <strong>requirements.txt</strong> y en él simplemente pegar la dependencia. Cabe aclarar que cada nueva dependencia se debe escribir en una nueva linea de este archivo.
+    El contenido del archivo para nuestro ejemplo es:
+    <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nv">jupyter</span><span class="o">==</span><span class="m">1</span>.0.0
+</code></pre></div></p>
+</li>
+<li>
+<p>Este archivo <strong>requirements.txt</strong> debe ser añadido al repositorio del proyecto. Si bien puede ser añadido en cualquier sitio de nuestro repositorio se recomienda que esté en la raiz:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>.
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>├── main.py
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>├── requirements.txt
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>└── modulo1
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>    ├── __init__.py
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    ├── reader.py
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>    └── view.py
+</code></pre></div></p>
+</li>
+<li>
+<p>En caso de trabajar en equipo cualquier integrante del equipo ante un cambio en este archivo debe ejecutar en su entorno virtual:
+    <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+</code></pre></div></p>
+</li>
+</ol>
+<p><strong>Procurar siempre tener el </strong>requirements.txt<strong> actualizado a las necesidades de nuestro sistema, ya que en él se establecen las librerías y versiones para las cuales garantizamos que nuestro sistema funciona correctamente.</strong></p>
+<ul>
+<li>README.md: Documentación básica del proyecto</li>
+<li>LICENSE: Licencia de uso y distribución</li>
+</ul>
 
               
             </article>
@@ -720,7 +690,7 @@ url del repositorio remoto (ver comandos sugeridos al crear el repositorio en Gi
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../../03/git/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Guía de Git" rel="prev">
+        <a href="../../13/modulos_y_paquetes/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Módulos y paquetes" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -729,20 +699,20 @@ url del repositorio remoto (ver comandos sugeridos al crear el repositorio en Gi
               <span class="md-footer__direction">
                 Previous
               </span>
-              Guía de Git
+              Módulos y paquetes
             </div>
           </div>
         </a>
       
       
         
-        <a href="../../05/ssh/" class="md-footer__link md-footer__link--next" aria-label="Next: SSH" rel="next">
+        <a href="../../09/guias_de_estilo/" class="md-footer__link md-footer__link--next" aria-label="Next: Guía de estilos" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              SSH
+              Guía de estilos
             </div>
           </div>
           <div class="md-footer__button md-icon">
