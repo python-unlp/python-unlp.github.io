@@ -727,11 +727,11 @@ programa. La estructura de archivos y directorios dentro de <code>noticias_unlp<
 <a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>    ├── reader.py
 <a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    └── view.py
 </code></pre></div>
-<p>Éste script puede importar los otros con imports absolutos, por ejemplo:</p>
+<p>Éste script puede importar a los módulos usando imports absolutos, por ejemplo:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">import</span> <span class="nn">unlp_news.reader</span>
 </code></pre></div>
 <p>o bien</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kn">from</span> <span class="nn">unlp.news</span> <span class="kn">import</span> <span class="n">reader</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kn">from</span> <span class="nn">unlp_news</span> <span class="kn">import</span> <span class="n">reader</span>
 </code></pre></div>
 <p>Y deberá contener el programa principal que ejecuta al resto de la funcionalidad.</p>
 <ol start="6">
