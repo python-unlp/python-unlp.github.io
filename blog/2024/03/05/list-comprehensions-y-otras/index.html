@@ -1387,8 +1387,10 @@
 <p>Esto se podría leer como "Todo n, tal que n pertenece a los reales, es menor que diez y es impar".</p>
 <p>Como veremos la notación por comprensión de Python se parece mucho a este último ejemplo.</p>
 <h3 id="notacion-por-comprension-en-python">Notación por comprensión en Python<a class="headerlink" href="#notacion-por-comprension-en-python" title="Permanent link">&para;</a></h3>
-<p>La notación por comprensión en Python se puede usar para construir listas, conjuntos, diccionarios y generadores. Todos son muy similares, pero por simplicidad empezaremos definiendo listas.</p>
-<p>Tomaremos el ejemplo de la sección anterior queremos generar una lista de los "números naturales impares menores que diez". Se puede escribir una list comprehension de Python que tenga esos valores
+<p>La notación por comprensión en Python se puede usar para construir listas, conjuntos, diccionarios y generadores.
+Todos son muy similares, pero por simplicidad empezaremos definiendo listas.</p>
+<p>Tomaremos el ejemplo de la sección anterior: queremos generar una lista de los "números naturales impares menores que diez".
+Se puede escribir una list comprehension de Python que tenga esos valores
 de la siguiente forma:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">[</span><span class="n">n</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span> <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">]</span>
 </code></pre></div>
@@ -1414,7 +1416,8 @@ de la siguiente forma:</p>
 <p>Acá en lugar de indicar el <strong>cómo</strong> indicamos <strong>qué</strong> queremos hacer. Queremos un rango de números del 1 al 10, de ese rango queremos filtrar los impares y a ese resultado lo queremos en una lista.</p>
 <p>En este caso como programadores al leer la palabra <code>list</code> nos queda claro que estamos construyendo una lista y al leer <code>filter</code> queda claro que estamos filtrando información de alguna manera. Pero obviamente tenemos que estar familiarizados y acostumbrados a leer código con <code>lambda</code>, <code>filter</code>, <code>map</code> o <code>reduce</code> para entender este tipo de soluciones.</p>
 <h4 id="volviendo-a-la-list-comprehension">Volviendo a la list comprehension<a class="headerlink" href="#volviendo-a-la-list-comprehension" title="Permanent link">&para;</a></h4>
-<p>La notación por comprensión es un concepto básico y difundido de las matemáticas. También es una notación que es usada distintos lenguajes de diferentes paradigmas.</p>
+<p>La notación por comprensión es un concepto básico y difundido de las matemáticas.
+También es una notación que es usada en distintos lenguajes de diferentes paradigmas.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p">[</span><span class="n">n</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span> <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">]</span>
 </code></pre></div>
 <p>De forma similar al ejemplo anterior, con la list comprehesion indico el <strong>qué</strong> y no tanto el <strong>cómo</strong>. Queda claro para el programador al ver los corchetes que estamos creando una lista, al ver el <code>range</code> veremos el conjunto de números inicial y por último al ver la condición del <code>if</code> vemos cómo filtraremos ese conjunto de números para quedarnos con el resultado final.</p>
