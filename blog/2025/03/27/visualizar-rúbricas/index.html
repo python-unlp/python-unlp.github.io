@@ -9,10 +9,8 @@
       
       
       
-        <link rel="prev" href="../../24/git-b%C3%A1sico/">
+        <link rel="prev" href="../../../../2024/03/05/list-comprehensions-y-otras/">
       
-      
-        <link rel="next" href="../../../05/01/gesti%C3%B3n-de-dependencias-en-python/">
       
       
       <link rel="icon" href="../../../../../images/favicon.ico">
@@ -20,7 +18,7 @@
     
     
       
-        <title>Entornos virtuales - Python UNLP</title>
+        <title>Visualizar rúbricas - Python UNLP</title>
       
     
     
@@ -72,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#entornos-virtuales" class="md-skip">
+        <a href="#visualizar-rubricas" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -105,7 +103,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Entornos virtuales
+              Visualizar rúbricas
             
           </span>
         </div>
@@ -1238,32 +1236,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#como-crear-un-entorno-virtual" class="md-nav__link">
-    <span class="md-ellipsis">
-      ¿Cómo crear un entorno virtual?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#como-usar-mi-entorno-virtual" class="md-nav__link">
-    <span class="md-ellipsis">
-      ¿Como usar mi entorno virtual?
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1299,7 +1271,7 @@
                     <li class="md-nav__item">
                       <div class="md-nav__link">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
-                        <time datetime="2023-04-29 00:00:00+00:00" class="md-ellipsis">29 de abril de 2023</time>
+                        <time datetime="2025-03-27 00:00:00+00:00" class="md-ellipsis">27 de marzo de 2025</time>
                       </div>
                     </li>
                     
@@ -1310,8 +1282,9 @@
                           <span class="md-ellipsis">
                             en
                             
-                              <a href="../../../../category/python/">Python</a>, 
-                              <a href="../../../../category/entornos-virtuales/">Entornos virtuales</a></span>
+                              <a href="../../../../category/moodle/">Moodle</a>, 
+                              <a href="../../../../category/correcciones/">Correcciones</a>, 
+                              <a href="../../../../category/entregas/">Entregas</a></span>
                         </div>
                       </li>
                     
@@ -1322,7 +1295,7 @@
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
                           <span class="md-ellipsis">
                             
-                              2 minutos de lectura
+                              1 minuto de lectura
                             
                           </span>
                         </div>
@@ -1346,72 +1319,11 @@
 
 
 
-<h1 id="entornos-virtuales">Entornos virtuales<a class="headerlink" href="#entornos-virtuales" title="Permanent link">&para;</a></h1>
-<p><strong>venv</strong> es una herramienta usada para crear un ambiente aislado de
-<strong>Python</strong>. Este ambiente tiene su propio directorio de instalación que no
-comparte librerías con otros ambientes virtuales ni con el sistema operativo.</p>
-<p>Esto tiene la ventaja que separa las librerías específicas que necesitamos en
-cada entorno virtual.</p>
-<p>Es útil hacer esta separación porque en el desarrollo de software es muy común
-que queramos usar en distintos proyectos distintas versiones de la misma
-librería.</p>
-<!-- more -->
-
-<p>Por ejemplo, podemos tener un proyecto que hicimos hace un tiempo que usa una
-versión de <code>numpy</code> que ahora no es la última. Para ese proyecto puede estar
-perfecta esa versión y algunas veces puede ser peligroso actualizar una
-librería. Por el contrario si vamos a arrancar un nuevo proyecto seguramente
-queremos poder usar la última versión de <code>numpy</code>.</p>
-<p>La solución que nos da <strong>venv</strong> es crear la cantidad de directorios
-virtuales que queramos con su propia versión de <strong>Python</strong> y sus propias librerías
-externas de forma aislada.</p>
-<p>Una práctica muy común con <strong>venv</strong> es tener un entorno virtual por
-proyecto aislando cada proyecto y evitando cualquier problema de compatibilidad.</p>
-<h2 id="como-crear-un-entorno-virtual">¿Cómo crear un entorno virtual?<a class="headerlink" href="#como-crear-un-entorno-virtual" title="Permanent link">&para;</a></h2>
-<p>Para crear un entorno virtual primero tenemos que ubicarnos en el directorio
-donde está el código de nuestra aplicación.</p>
-<p>En este ejemplo crearemos un directorio para un nuevo proyecto y nos ubicaremos
-en el mismo:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>mkdir<span class="w"> </span>mi_proyecto
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">cd</span><span class="w"> </span>mi_proyecto
-</code></pre></div>
-<p>Ahora vamos a crear un directorio virtual llamado <code>venv</code> para la versión de
-<strong>Python</strong> que hayamos configurado como global</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>venv
-</code></pre></div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Recuerden tener configurada la versión de Python con la que quieren arrancar el proyecto.
-En nuestro caso la versión <code>3.12.x</code></p>
-<p>Se pueden asegurar ejecutando:</p>
-<p><code>$ python --version</code></p>
-<p>Si la versión no coincide e instalaron <strong>Python</strong> con venv, pueden usar
-<code>pyenv global 3.12.x</code> para configurarla o bien <code>pyenv shell 3.12.x</code> para
-usarla temporalmente (donde <code>x</code> es el último dígito de la versión específica
-que instalaron).</p>
-</div>
-<p>Ya estamos listos para usar nuestro entorno virtual. Tanto la versión de
-<strong>Python</strong> como las librerías se van a almacenar dentro del directorio <code>venv</code>
-creado.</p>
-<h2 id="como-usar-mi-entorno-virtual">¿Como usar mi entorno virtual?<a class="headerlink" href="#como-usar-mi-entorno-virtual" title="Permanent link">&para;</a></h2>
-<p>Para activar el entorno ejecutamos</p>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">source</span><span class="w"> </span>venv/bin/activate<span class="w">  </span><span class="c1"># Linux</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>venv<span class="se">\S</span>cripts<span class="se">\a</span>ctivate<span class="w">  </span><span class="c1"># Windows</span>
-</code></pre></div></p>
-<p>Ahora si localizamos donde está el ejecutable de <strong>Python</strong> que utilizamos
-veremos que es el que está dentro del directorio virtual</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>which<span class="w"> </span>python
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>mi_proyecto/venv/bin/python
-</code></pre></div>
-<p>Es necesario desactivar si queremos volver a usar el <strong>Python</strong> que instalamos
-globalmente</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>deactivate
-</code></pre></div>
-<p>Ahora si necesitamos instalar una librería tenemos que activar el entorno y
-usar <code>pip</code></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>pip<span class="w"> </span>install<span class="w"> </span>numpy
-</code></pre></div>
+<h1 id="visualizar-rubricas">Visualizar rúbricas<a class="headerlink" href="#visualizar-rubricas" title="Permanent link">&para;</a></h1>
+<p>En el siguiente video se muestra cómo visualizar las rúbricas en Moodle.
+Es importante tener en cuenta que las rúbricas son la herramienta que
+utilizamos para evaluar y calificar trabajos de estudiantes.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=VVGQoodtKgM" title="Visualización de rúbricas" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 
